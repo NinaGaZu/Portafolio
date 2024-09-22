@@ -3,81 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Mi Portafolio</title>
 </head>
 
 <body>
   <!-- Menu -->
-    <header>
-      <img src="#" alt="Logo">
-      <h1>Gianina Gaete</h1>
-      <nav>
-        <ul>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#aficiones">Aficiones</a></li>
-          <li><a href="#formacion">Formación</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+    <header class="header">
+      <img class="header__logo" src="#" alt="Logo">
+      <p class="header__titulo">NinaGaZu</p>
+      <nav class="navegacion">
+        <ul class="navegacion__lista">
+          <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
+          <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
+          <li class="navegacion__elemento"><a href="#hobbies">Hobbies</a></li>
+          <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
+          <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
+          <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
   <!-- Sección de Presentación -->
-    <section>
-      <img src="./assets/img/Screenshot_20220615-192037_Instagram.jpg" alt="Foto de perfil">
-      <div>
-        <h2>Hola, Mi nombre es Gianina Gaete y construyo páginas web</h2>
-        <p>Soy formada en Talento digital para chile y actualmente estoy participando del proyecto Oracle One en Alura Latam.</p>
-        <ul>
-          <li><a href="">Github</a><img src="" alt=""></li>
-          <li><a href="">LinkedIn</a><img src="" alt=""></li>
-          <li><a href="">Instagram</a><img src="" alt=""></li>
-          <li><a href="">Curriculum</a><img src="" alt=""></li>
+    <section class="presentacion">
+      <img class="presentacion__foto" src="./assets/img/Screenshot_20220615-192037_Instagram.jpg" alt="Foto de perfil">
+      <div class="presentacion__contenedor">
+        <h2 class="presentacion__titulo">Hola, Mi nombre es Gianina Gaete, chilena, tengo 38 años y construyo páginas web</h2>
+        <p class="presentación__parrafo">Soy formada en Talento digital para chile y actualmente estoy participando del proyecto Oracle One en Alura Latam.</p>
+        <ul class="redes">
+          <li class="redes__img"><a href="">Github</a><img src="./assets/img/arrow.png" alt=""></li>
+          <li class="redes__img"><a href="">LinkedIn</a><img src="./assets/img/arrow.png" alt=""></li>
+          <li class="redes__img"><a href="">Instagram</a><img src="./assets/img/arrow.png" alt=""></li>
+          <!-- botón CV? -->
+          <li class="redes__img"><a href="">Curriculum</a><img src="./assets/img/arrow.png" alt=""></li>
         </ul>
       </div>
     </section>
 
   <!-- Sección sobre mí -->
-    <section>
-      <h2>Sobre mí</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos velit eos cupiditate atque quis, beatae fuga autem dignissimos officia necessitatibus eveniet minima dicta porro vero. Consequatur mollitia maiores fugiat dolor!</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, enim ipsam? Totam excepturi, odit ut unde, officiis eaque rem esse perferendis ad facere dolor fuga ipsum. Odio beatae sed est.</p>
+    <section class="sobre-mi">
+      <h2 class="sobre-mi__titulo">Sobre mí</h2>
+      <p class="sobre-mi__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos velit eos cupiditate atque quis, beatae fuga autem dignissimos officia necessitatibus eveniet minima dicta porro vero. Consequatur mollitia maiores fugiat dolor!</p>
+      <p class="sobre-mi__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, enim ipsam? Totam excepturi, odit ut unde, officiis eaque rem esse perferendis ad facere dolor fuga ipsum. Odio beatae sed est.</p>
   <!-- firma opcional? -->    
       <img src="" alt="firma">
     </section>
 
   <!-- Sección de Habilidades -->
-    <section>
-      <h2>Habilidades</h2>
-      <ul>
-        <li>
-          <img src="./assets/img/html5.png" alt="">
-          <p>HTML 5</p>
-        </li>
-        <li>
-          <img src="./assets/img/JS.png" alt="">
-          <p>JavaScript</p>
-        </li>
-        <li>
-          <img src="" alt="">
-          <p>Node.js</p>
-        </li>
-        <li>
-          <img src="./assets/img/css.png" alt="">
-          <p>CSS</p>
-        </li>
-      </ul>
+    <section class="habilidades">
+      <h2 class="habilidades__titulo">Habilidades</h2>
+      <div class="habilidades__contenedor">
+        <ul class="habilidades__lista">
+          <li class="habilidades__elemento">
+            <img class="habilidades__img" src="./assets/img/html5.png" alt="">
+            <h4 class="habilidades__nombre">Html 5</h4>
+          </li>
+          <li class="habilidades__elemento">
+            <img class="habilidades__img" src="./assets/img/JS.png" alt="">
+            <h4 class="habilidades__nombre">JavaScript</h4>
+          </li>
+          <li class="habilidades__elemento">
+            <img class="habilidades__img" src="#" alt="Node.js">
+            <h4 class="habilidades__nombre">Node.js</h4>
+          </li>
+          <li class="habilidades__elemento">
+            <img class="habilidades__img" src="./assets/img/css.png" alt="">
+            <h4 class="habilidades__nombre">CSS</h4>
+          </li>
+        </ul>
+      </div>
     </section>
 
-  <!-- Sección de Aficiones -->
+  <!-- Sección de Hobbies -->
+    <section class="hobbies">
+      <h2 class="hobbies__titulo">Hobbies</h2>
+      <div class="hobbies__contenedor">
+        <ul class="hobbies__lista">
+          <li class="hobbies__elemento">
+            <img class="hobbies__img" src="" alt="">
+            <h4 class="hobbies__nombre">Leer</h4>
+          </li>
+          <li class="hobbies__elemento">
+            <img class="hobbies__img" src="" alt="">
+            <h4 class="hobbies__nombre">Escuchar música</h4>
+          </li>
+          <li class="hobbies__elemento">
+            <img class="hobbies__img" src="" alt="">
+            <h4 class="hobbies__nombre">Ver anime</h4>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- Formación Académica? -->
+  <!-- Formación TI -->
+    <section class="formacion">
+      <h2 class="formacion__titulo">Formación TI</h2>
+      <div class="formacion__contenedor">
+        <ul class="formacion__lista">
+          <li class="formacion__elemento">
+            <div class="formacion__elemento__img">
+              <img class="formacion__img" src="#" alt="icono">
+            </div>
+            <div class="datos__contenedor">
+              <p class="datos__nombre">front end</p>
+              <p class="datos__institucion">2022 </p>
+            </div>
+          </li>
+          <li>
+            <div class="formacion__elemento__img">
+              <img class="formacion__img" src="#" alt="">
+            </div>
+            <div class="datos__contenedor">
+              <p class="datos__nombre"></p>
+              <p class="datos__institucion">Desarrollo Front End</p>
+            </div>
+          </li>
+          <li>
+            <div class="formacion__elemento__img">
+              <img class="formacion__img" src="" alt="">
+            </div>
+            <div class="datos__contenedor">
+              <p class="datos__nombre"></p>
+              <p class="datos__institucion">Desarrollo Front End</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
   <!-- Sección de Proyectos -->
+  <section class="proyectos">
+    <h2 class="proyectos__titulo">Proyectos</h2>
+    <div class="proyectos">
+      <ul class="proyectos__lista">
+        <li class="proyectos__elemento">
+          <div class="proyectos__elemento__img">
+            <img class="proyectos__img" src="#" alt="icono">
+          </div>
+          <div class="informacion__contenedor">
+            <p class="informacion__nombre">front end</p>
+          </div>
+          <div class="boton">
+            <button class="proyectos__boton__repositorio" type="submit">Repositorio</button>
+            <button class="proyectos__boton__demo" type="submit">Ver demo</button>
+          </div>
+        </li>
+        <li class="proyectos__elemento"></li>
+          <div class="proyectos__elemento__img">
+            <img class="proyectos__img" src="#" alt="icono">
+          </div>
+          <div class="informacion__contenedor">
+            <p class="informacion__nombre">front end</p>
+          </div>
+          <div class="boton">
+            <button class="proyectos__boton__repositorio" type="submit">Repositorio</button>
+            <button class="proyectos__boton__demo" type="submit">Ver demo</button>
+          </div>
+        </li>
+        <li class="proyectos__elemento"></li>
+          <div class="proyectos__elemento__img">
+            <img class="proyectos__img" src="#" alt="icono">
+          </div>
+          <div class="informacion__contenedor">
+            <p class="informacion__nombre">front end</p>
+          </div>
+          <div class="boton">
+            <button class="proyectos__boton__repositorio" type="submit">Repositorio</button>
+            <button class="proyectos__boton__demo" type="submit">Ver demo</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  <!-- Sección deContactos? -->
+  <!-- Sección de Contacto -->
+    <section class="contacto">
+      <h2 class="contacto__titulo">Contacto</h2>
+      <p class="contacto__texto">Si quieres contactarme completa el siguiente formulario.</p>
+      <form class="contacto__formulario" >
+        <input class="contacto__campo" type="text" placeholder="Nombre">
+        <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+        <input class="contacto__campo" type="text" placeholder="Asunto" e>
+        <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
+        <button class="contacto__boton" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
   
+  <!-- Footer -->
+    <footer>
+      <section class="footer">
+        <!-- <div>
+          <ul class="footer-social-list">
+            <li><a href="#">github</a></li>
+            <li><a href="#">linkedin</a></li>
+          </ul>
+        </div> -->
+        <div>
+          <h4 class="footer__texto">&copy; 2024 Copyright NinaGaZu.</h4>
+        </div>
+      </section>
+    </footer> 
+
 </body>
 </html>

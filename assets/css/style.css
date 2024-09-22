@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+
+:root {
+  --color-de-fondo: #F5F5F5;
+  --color-de-fondo-menu: #EAF2FD;
+  --color-de-link: #464646;
+  --color-de-boton: #2A7AE4;
+  --font-h1:"Raleway", sans-serif;
+}
+
+body {
+  background-color: var(--color-de-fondo);
+  color: var(--color-de-link);
+  font-family: var(--font-h1);
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 1.6;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-de-link);
+  
+}
+
+/* ------ Menu ------ */
+.header,
+.presentacion,
+.sobre-mi,
+.habilidades,
+.hobbies {
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header__logo {
+  max-width: 80px;
+}
+
+.header__titulo {
+  text-align: center;
+  font-weight: bold;
+}
+
+.navegacion__lista {
+  display: none;
+}
+
+/* ------ Sección presentación ------ */
+
+.presentacion__foto {
+  width: 98px;
+  height: auto;
+  border-radius: 50%;
+}
+.presentacion__titulo {
+  font-weight: bold;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.redes__img {
+  font-weight: 600;
+  
+}
+
+/* ------ Sección sobre mí ------ */
+
+.sobre-mi {
+  background-color: var(--color-de-fondo-menu);
+}
+
+/* .sobre-mi__titulo {
+  font-weight: bold;
+} */
+
+/* ------ Sección habilidades y hobbies ------ */
+
+.habilidades__titulo,
+.hobbies__titulo,
+.formacion__titulo,
+.proyectos__titulo {
+  text-align: center;
+}
+
+.habilidades__lista,
+.hobbies__lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.habilidades__elemento,
+.hobbies__elemento {
+  width: 156px;
+  height: 118px;
+  
+}
+
+.habilidades__img,
+.hobbies__img {
+  width: 50px;
+
+}
+
+/* ------ Sección hobbies ------ */
+
+
+/* ------ Sección formación académica------ */
+
+.formacion,
+.contacto {
+  background-color: var(--color-de-fondo-menu);
+}
+
+.formacion,
+.proyectos,
+.contacto,
+.footer {
+  padding: 32px;
+}
+
+
+.formacion__lista {
+  display: flex;
+  flex-direction: column;
+}
+
+.formacion__elemento__img {
+  background-color: var(--color-de-fondo);
+  width: 296px;
+  height: 118px;
+}
+
+/* ------ Sección proyectos ------ */
+
+.proyectos__elemento__img {
+  width: 296px;
+  height: 144px;
+}
+
+.boton {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.proyectos__boton__repositorio {
+  width: 108px;
+  height: 40px;
+  border-color: var(--color-de-boton);
+  color: var(--color-de-boton);
+}
+
+.proyectos__boton__demo {
+  width: 96px;
+  height: 40px;
+  background: var(--color-de-boton);
+  color: var(--color-de-fondo);  
+  
+}
+
+/* ------ Sección contacto ------ */
+
+.contacto__formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+}
+
+.contacto__campo {
+  background-color: var(--color-de-fondo);
+  height: 56px;
+  width: 296px;
+  margin: 32px;
+  border-radius: 4%;
+}
+
+.contacto__campo--textarea {
+  height: 133px;
+  border-radius: 4%;
+  
+}
+
+.contacto__boton {
+  background-color: var(--color-de-boton);
+  width: 133px;
+  height: 40px;
+  align-self:flex-start;
+}
+/* ------ Footer ------ */
+
+.footer {
+  background-color: var(--color-de-fondo);
+}
+
+.footer__texto {
+  text-align: center;
+  color: var(--color-de-link);
+}
+/* ------ Responsividad ------ */
