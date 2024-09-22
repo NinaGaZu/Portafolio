@@ -107,7 +107,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .redes__img {
@@ -263,6 +263,18 @@ a {
     justify-content: flex-start;
   }
 
+
+  .presentacion {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+
+  .presentacion__foto {
+    width: 146px;
+    height: 146px;
+  }
+
 }
 
 /* Pantallas grandes */
@@ -291,6 +303,10 @@ a {
     gap: 32px;
   }
 
+  .presentacion__foto {
+    width: 368px;
+    height: 368px;
+  }
   .header,
   .presentacion,
   .sobre-mi,
@@ -300,7 +316,7 @@ a {
   .proyectos,
   .contacto,
   .footer {
-    padding: 0 16px;
+    padding: 64px;
   }
 
 }
