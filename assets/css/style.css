@@ -107,7 +107,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .redes__img {
@@ -212,10 +212,14 @@ a {
   height: 40px;
   background: var(--color-de-boton);
   color: var(--color-de-fondo);  
+  border-color: var(--color-de-boton);
   
 }
 
 /* ------ Sección contacto ------ */
+.contacto__img {
+  display: none;
+}
 
 .contacto__formulario {
   display: flex;
@@ -226,6 +230,7 @@ a {
 
 .contacto__campo {
   background-color: var(--color-de-fondo);
+  font-family: var(--font-h1);
   height: 56px;
   width: 296px;
   margin: 32px;
@@ -236,11 +241,14 @@ a {
 .contacto__campo--textarea {
   height: 133px;
   border-radius: 4%;
+  font-family: var(--font-h1);
   
 }
 
 .contacto__boton {
   background-color: var(--color-de-boton);
+  border-color: var(--color-de-boton);
+  color: var(--color-de-fondo);
   width: 133px;
   height: 40px;
   align-self:flex-start;
@@ -261,6 +269,46 @@ a {
 @media (min-width: 768px) {
   .header {
     justify-content: flex-start;
+  }
+
+
+  .presentacion {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .presentacion__foto {
+    width: 146px;
+    height: 146px;
+  }
+
+  .formacion__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .formacion__elemento__img {
+    width: 224px;
+    height: 118px;
+  }
+
+  .header,
+  .footer {
+    padding: 16px 32px;
+  }
+
+  .presentacion,
+  .sobre-mi,
+  .habilidades,
+  .hobbies,
+  .formacion,
+  .proyectos,
+  .contacto {
+    padding: 32px;
   }
 
 }
@@ -290,17 +338,92 @@ a {
     display: flex;
     gap: 32px;
   }
+  
+  .presentacion__contenedor {
+    align-content: center;
+  }
 
+  .presentacion__foto {
+    width: 368px;
+    height: 368px;
+  }
+
+  /* .sobre-mi {
+    padding-right: 385px;
+  } */
+
+  .habilidades__contenedor,
+  .hobbies__contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .formacion__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 16px;
+    
+  }
+
+  .formacion__elemento__img {
+    width: 312px;
+    height: 220px;
+  }
+
+  .proyectos__contenedor ul{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .proyectos__elemento {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .informacion {
+    flex-direction: column;
+  }
+  .proyectos__elemento:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .proyectos__elemento:nth-child(3) {
+    flex-direction: row;
+  }
+
+  .proyectos__elemento__img {
+    width: 752px;
+    height: 406px;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .contacto__img {
+    display: flex;
+    width: 464px;
+    height: 593px;
+  }
+  
   .header,
+  .footer {
+    padding: 32px;
+  }
+
   .presentacion,
   .sobre-mi,
   .habilidades,
   .hobbies,
   .formacion,
   .proyectos,
-  .contacto,
-  .footer {
-    padding: 0 16px;
+  .contacto {
+    padding: 64px;
   }
 
 }
