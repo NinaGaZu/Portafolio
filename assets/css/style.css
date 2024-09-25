@@ -310,7 +310,6 @@ a {
   .contacto {
     padding: 32px;
   }
-
 }
 
 /* Pantallas grandes */
@@ -422,7 +421,8 @@ a {
   .hobbies,
   .formacion,
   .proyectos,
-  .contacto {
+  .contacto,
+  .footer {
     padding: 64px;
   }
 
