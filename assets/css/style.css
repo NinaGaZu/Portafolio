@@ -34,15 +34,7 @@ section {
 header {
   height: 60px; /* Ajusta según el tamaño de tu header */
 }
-/* body {
-  background-color: var(--color-de-fondo);
-  color: var(--color-de-link);
-  font-family: var(--font-h1);
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-  line-height: 1.6;
-} */
+
 
 ol, ul, li {
   list-style: none;
@@ -147,6 +139,16 @@ a {
   width: 156px;
   height: 118px;
   margin: 8px 0;
+  padding-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease; 
+}
+
+.habilidades__elemento:hover,
+.hobbies__elemento:hover {
+transform: translateY(-10px);
 }
 
 .habilidades__img,
@@ -173,85 +175,263 @@ a {
   padding: 32px;
 }
 
+.formacion__contenedor {
+  display: flex;
+  justify-content: center;
+}
 
 .formacion__lista {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Permite que los elementos bajen de línea en pantallas pequeñas */
+  justify-content: center;
+  gap: 20px;
+}
+
+.formacion__elemento {
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease; /* Animación en hover */
+}
+
+.formacion__elemento:hover {
+  transform: translateY(-10px); /* Pequeño efecto al pasar el ratón */
 }
 
 .formacion__elemento__img {
-  background-color: var(--color-de-fondo);
-  width: 296px;
-  height: 118px;
+  margin-bottom: 15px;
+  align-content: center;
+}
+
+.formacion__img {
+  max-width: 100%; /* La imagen no será más ancha que su contenedor */
+  height: auto; /* Mantendrá su proporción */
+}
+
+.datos__contenedor {
+  padding: 10px 0;
+}
+
+.datos__nombre {
+  font-size: 1.2rem;
+  font-weight: bold;
+ /*  color: #333; */
+}
+
+.datos__institucion {
+  font-size: 1rem;
+/*   color: #777; */
 }
 
 /* ------ Sección proyectos ------ */
 
+.proyectos {
+  padding: 40px 20px;
+  background-color: #f5f5f5; /* Fondo claro para diferenciar la sección */
+}
+
+.proyectos__titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Contenedor general */
+.proyectos__contenedor ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+}
+
+/* Lista de proyectos */
+.proyectos__lista {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+/* Elemento individual */
+.proyectos__elemento {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+
+.proyectos__elemento:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 30%; /* Div con la información toma 30% del espacio */
+}
+
 .proyectos__elemento__img {
-  width: 296px;
-  height: 144px;
+  flex-basis: 70%; /* Imagen toma el 70% del espacio disponible */
+  width: 100%; 
+  height: auto;
+}
+
+.proyectos__boton {
+  display: flex;
+  gap: 16px;
+}
+
+/* Imagen del proyecto */
+.proyectos__img {
   max-width: 100%;
   height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Información del proyecto */
+.informacion__nombre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .boton {
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  justify-content: center;
 }
 
-.proyectos__boton__repositorio {
+.proyectos__boton__repositorio,
+.proyectos__boton__demo {
   width: 108px;
   height: 40px;
-  border-color: var(--color-de-boton);
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 2px solid var(--color-de-boton);
   color: var(--color-de-boton);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.proyectos__boton__repositorio:hover {
+  background-color: var(--color-de-boton);
+  color: var(--color-de-fondo);
 }
 
 .proyectos__boton__demo {
-  width: 96px;
-  height: 40px;
   background: var(--color-de-boton);
   color: var(--color-de-fondo);  
   border-color: var(--color-de-boton);
-  
+}
+
+.proyectos__boton__demo:hover {
+  background-color: var(--color-de-fondo);
+  color: var(--color-de-boton);
 }
 
 /* ------ Sección contacto ------ */
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+  gap: 20px;
+}
+
+.contacto__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
 .contacto__img {
-  display: none;
+  
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contacto__titulo {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.contacto__texto {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .contacto__formulario {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  align-items: center;
+  gap: 16px;
+  width: 100%;
 }
 
 .contacto__campo {
-  background-color: var(--color-de-fondo);
-  font-family: var(--font-h1);
-  height: 56px;
-  width: 296px;
-  margin: 32px;
-  border-radius: 4%;
-  margin: 16px 0;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contacto__campo:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  outline: none;
 }
 
 .contacto__campo--textarea {
-  height: 133px;
-  border-radius: 4%;
-  font-family: var(--font-h1);
-  
+  height: 150px;
+  resize: none;
 }
 
 .contacto__boton {
-  background-color: var(--color-de-boton);
-  border-color: var(--color-de-boton);
-  color: var(--color-de-fondo);
-  width: 133px;
-  height: 40px;
-  align-self:flex-start;
+  padding: 12px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contacto__boton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 /* ------ Footer ------ */
 
@@ -285,15 +465,25 @@ a {
   }
 
   .formacion__lista {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 16px;
+    flex-direction: column; /* Cambia a disposición vertical en pantallas más pequeñas */
+    align-items: center;
   }
 
-  .formacion__elemento__img {
-    width: 224px;
-    height: 118px;
+  .formacion__elemento {
+    width: 100%; /* Ocupará todo el ancho disponible en pantallas pequeñas */
+    max-width: 400px; /* Ancho máximo para mantener proporción */
+  }
+  /* .proyectos__lista {
+    grid-template-columns: repeat(2, 1fr); /* Muestra dos proyectos en línea en pantallas medianas */
+  } */
+
+  .contacto {
+    flex-direction: column;
+  }
+
+  .contacto__img {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .header,
@@ -310,7 +500,7 @@ a {
   .contacto {
     padding: 32px;
   }
-}
+
 
 /* Pantallas grandes */
 @media (min-width: 1024px) {
@@ -338,6 +528,10 @@ a {
     gap: 32px;
   }
   
+  .presentacion {
+     justify-content: space-evenly;
+  }
+  
   .presentacion__contenedor {
     align-content: center;
   }
@@ -347,9 +541,11 @@ a {
     height: 368px;
   }
 
-  /* .sobre-mi {
-    padding-right: 385px;
-  } */
+  .sobre-mi__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   .habilidades__contenedor,
   .hobbies__contenedor {
@@ -366,26 +562,41 @@ a {
     
   }
 
-  .formacion__elemento__img {
-    width: 312px;
-    height: 220px;
+  .formacion__lista {
+    gap: 40px; /* Incrementa el espacio entre elementos */
   }
 
-  .proyectos__contenedor ul{
+  .formacion__elemento {
+    width: 300px; /* Aumenta el tamaño de los elementos */
+    padding: 20px; /* Aumenta el espacio interior */
+    margin-bottom: 30px; /* Mayor separación entre filas */
+  }
+
+  .formacion__img {
+    width: 120px; /* Ajusta el tamaño de las imágenes para pantallas grandes */
+  }
+
+  .datos__nombre {
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
+  }
+
+  .datos__institucion {
+    font-size: 1.2rem;
+  }
+
+  .proyectos__contenedor ul {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 64px;
   }
 
   .proyectos__elemento {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 32px;
   }
 
-  .informacion {
-    flex-direction: column;
-  }
   .proyectos__elemento:nth-child(2) {
     flex-direction: row-reverse;
   }
@@ -394,14 +605,10 @@ a {
     flex-direction: row;
   }
 
-  .proyectos__elemento__img {
-    width: 752px;
-    height: 406px;
-  }
-
   .contacto {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 16px;
   }
   .contacto__img {
