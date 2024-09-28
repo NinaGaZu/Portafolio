@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portafolio de desarrollador web.">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>NinaGaZu</title>
 </head>
 
@@ -12,8 +13,8 @@
   <!-- Menu -->
     <header class="header">
       <div class="header__contenedor">
-        <img class="header__logo" src="#" alt="Logo">
-        <p class="header__titulo">NinaGaZu</p>
+        <img class="header__logo" src="./assets/img/Logo_NinaGaZu.jpg" alt="Logo">
+        <p class="header__titulo">Gianina Gaete</p>
       </div>
       <nav class="navegacion">
         <ul class="navegacion__lista">
@@ -31,7 +32,7 @@
     <section class="presentacion">
       <img class="presentacion__foto" src="./assets/img/Screenshot_20220615-192037_Instagram.jpg" alt="Foto de perfil">
       <div class="presentacion__contenedor">
-        <h2 class="presentacion__titulo">Hola, Mi nombre es Gianina Gaete, chilena, tengo 38 años y construyo páginas web</h2>
+        <h2 class="presentacion__titulo">Hola, Mi nombre es Gianina Gaete y construyo páginas web</h2>
         <p class="presentación__parrafo">Soy formada en Talento digital para chile y actualmente estoy participando del proyecto Oracle One en Alura Latam.</p>
         <ul class="redes">
           <li class="redes__img"><a href="https://github.com/NinaGaZu">Github</a><img src="./assets/img/arrow.png" alt=""></li>
@@ -47,11 +48,9 @@
     <section class="sobre-mi" id="sobre-mi">
       <div class="sobre-mi__contenedor">
         <h2 class="sobre-mi__titulo">Sobre mí</h2>
-        <p class="sobre-mi__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos velit eos cupiditate atque quis, beatae fuga autem dignissimos officia necessitatibus eveniet minima dicta porro vero. Consequatur mollitia maiores fugiat dolor!</p>
-        <p class="sobre-mi__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, enim ipsam? Totam excepturi, odit ut unde, officiis eaque rem esse perferendis ad facere dolor fuga ipsum. Odio beatae sed est.</p>
+        <p class="sobre-mi__texto">Soy Gianina Gaete, desarrolladora fullstack JavaScript con formación en el Bootcamp de Awake Lab y experiencia en tecnologías front-end como HTML, CSS, JavaScript, y en el manejo de bases de datos relacionales con MySQL y back-end con Node.js. Además, tengo habilidades en el uso de frameworks como Bootstrap y en control de versiones con Git y GitHub.</p>
+        <p class="sobre-mi__texto">Me considero una persona entusiasta, abierta a la retroalimentación y en constante búsqueda de nuevos conocimientos para crecer profesionalmente. Mi enfoque está en crear soluciones eficientes y de calidad, tanto en el desarrollo front-end como en el back-end.</p>
       </div>
-      <!-- firma opcional? -->    
-      <img src="" alt="firma">
     </section>
 
   <!-- Sección de Habilidades -->
@@ -170,7 +169,7 @@
               <p class="informacion__nombre">Encriptador</p>
             </div>
             <div class="boton">
-              <button class="proyectos__boton__repositorio" type="submit">Repositorio</button>
+              <button class="proyectos__boton__repositorio" type="submit"><a href="https://github.com/NinaGaZu/Encriptador">Repositorio</a></button>
               <button class="proyectos__boton__demo" type="submit">Ver demo</button>
             </div>
           </div>
@@ -209,16 +208,16 @@
 
   <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
-      <img class="contacto__img" src="#" alt="img">
+      <img class="contacto__img" src="./assets/img/contacto.webp" alt="contacto">
       <div class="contacto__contenedor">  
         <h2 class="contacto__titulo">Contacto</h2>
         <p class="contacto__texto">Si quieres contactarme completa el siguiente formulario.</p>
-        <form class="contacto__formulario" >
-          <input class="contacto__campo" type="text" placeholder="Nombre">
-          <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
-          <input class="contacto__campo" type="text" placeholder="Asunto" e>
-          <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
-          <button class="contacto__boton" type="submit">Enviar mensaje</button>
+        <form class="contacto__formulario" id="formulario">
+          <input class="contacto__campo" id="nombre" type="text" placeholder="Nombre">
+          <input class="contacto__campo" id="email" type="email" placeholder="Correo Electrónico">
+          <input class="contacto__campo" id="asunto" type="text" placeholder="Asunto">
+          <textarea class="contacto__campo contacto__campo--textarea" id="mensaje" placeholder="Mensaje"></textarea>
+          <button class="contacto__boton" id="btn-enviar" type="submit">Enviar mensaje</button>
         </form>
       </div>
     </section>
@@ -234,30 +233,29 @@
       <div class="footer__contacto">
         <h3 class="footer__contacto__titulo">Contacto</h3>
         <ul class="footer__contacto__lista">
-          <li><a href="mailto:tuemail@ejemplo.com" class="footer__contacto__item">Correo</a></li>
-          <li><a href="https://github.com/tuusuario" target="_blank" class="footer__contacto__item">GitHub</a></li>
-          <li><a href="https://linkedin.com/in/tuusuario" target="_blank" class="footer__contacto__item">LinkedIn</a></li>
+          <li><a href="mailto:gianinagaete@gmail.com" class="footer__contacto__item">Correo</a></li>
+          <li><a href="https://github.com/NinaGaZu" target="_blank" class="footer__contacto__item">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/gianina-gaete/"target="_blank" class="footer__contacto__item">LinkedIn</a></li>
         </ul>
       </div>
   
       <div class="footer__redes">
         <h3 class="footer__redes__titulo">Sígueme</h3>
         <ul class="footer__redes__lista">
-          <li><a href="https://twitter.com/tuusuario" target="_blank" class="footer__redes__item">
-            <img src="./assets/img/twitter-icon.svg" alt="Twitter" class="footer__redes__icono">
-          </a></li>
-          <li><a href="https://instagram.com/tuusuario" target="_blank" class="footer__redes__item">
-            <img src="./assets/img/instagram-icon.svg" alt="Instagram" class="footer__redes__icono">
-          </a></li>
+          <li><a href="https://wa.me/56951944844" target="_blank" class="footer__contacto__item">
+            <i class="fab fa-whatsapp"></i>WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/gianina_gaete/" target="_blank" class="footer__redes__item">
+            <i class="fa-brands fa-instagram"></i>Instagram</a></li>
           <!-- Agrega más redes sociales si lo deseas -->
         </ul>
       </div>
     </div>
   
     <div class="footer__copyright">
-      <p>&copy; 2024 Gianina Gaete. Todos los derechos reservados.</p>
+      <p>&copy; 2024 NinaGaZu. Todos los derechos reservados.</p>
     </div>
   </footer>
 
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>
