@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-  --color-de-fondo: #F5F5F5;
-  --color-de-fondo-menu: #EAF2FD;
-  --color-de-link: #464646;
-  --color-de-boton: #2A7AE4;
-  --color-de-sombra: #0000001a;
-  --color-de-sombra-hover: #00000026;
+  --color-de-fondo: #f7f7f7; /* Fondo sutil */
+  --color-de-fondo-menu: #e0f7fa;;
+  --color-de-boton: #006064; ;
+  --color-de-link: #004d40; 
+  --color-de-sombra: rgba(0, 77, 64, 0.4);
+  --color-de-sombra-hover: rgba(0, 77, 64, 0.6);
   --color-de-fondo-proyectos:#b1c4cf;
-  --color-de-fondo-contacto-a:#f8f9fa;
-  --color-de-fondo-contacto-b:#e0e0e0;
-  --color-de-fondo-contacto-boton:#007bff;
-  --color-de-fondo-contacto-boton-hover:#0056b3;
-  --color-de-contacto-boton:#FFF;
+  --color-de-fondo-contacto-a: #004d40;
+  --color-de-fondo-contacto-b: #00796b;
+  --color-de-fondo-contacto-boton: #1E7F4B;
+  --color-de-fondo-contacto-boton-hover:#28A067;
+  --color-de-contacto-boton:#FFFFFF;
   --color-de-borde:#ccc;
-  --color-de-fondo-footer:#222;
-  --color-de-footer-hover:#00aaff;
+  --color-de-fondo-footer: #004d40;
+  --color-de-footer-hover: #80cbc4;
   --color-de-copyright:#bbb;
-  --font-h1:"Raleway", sans-serif;
+  --font-h2:"Raleway", sans-serif;
+  --font-p: "Open Sans", sans-serif;
 }
 
 *,
@@ -36,9 +38,12 @@ body {
   flex-direction: column;
   background-color: var(--color-de-fondo);
   color: var(--color-de-link);
-  font-family: var(--font-h1);
+  font-family: var(--font-p);
 }
 
+h2 {
+  font-family: var(--font-h2);
+}
 section {
   box-sizing: border-box;
 }
@@ -56,7 +61,9 @@ ol, ul, li {
 a {
   text-decoration: none;
   color: var(--color-de-link);
-  
+  padding: 8px 12px;  /* Aumenta el área de clic */
+  font-size: 1.1rem;  /* Tamaño de texto más grande */
+  margin: 4px 0;      /* Espaciado vertical entre enlaces */
 }
 
 /* ------ Menu ------ */
@@ -223,7 +230,6 @@ transform: translateY(-10px);
 .datos__nombre {
   font-size: 1.2rem;
   font-weight: bold;
- /*  color: #333; */
 }
 
 .datos__institucion {
@@ -313,19 +319,21 @@ transform: translateY(-10px);
 
 .boton {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   justify-content: center;
 }
 
 .proyectos__boton__repositorio,
 .proyectos__boton__demo {
-  width: 108px;
-  height: 40px;
-  padding: 10px 16px;
+  width: 120px; /* Aumenta el tamaño */
+  height: 48px; /* Asegura que el área táctil sea adecuada */
+  padding: 12px 16px; /* Espacio adicional */
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 6px;  /* Bordes más redondeados para un mejor toque */
+  margin: 8px 0;  /* Espacio vertical entre botones */
   border: 2px solid var(--color-de-boton);
   color: var(--color-de-boton);
+  background-color: var(--color-de-fondo);
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -393,7 +401,7 @@ transform: translateY(-10px);
 .contacto__formulario {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px; /* Aumenta el espacio entre campos del formulario */
   width: 100%;
 }
 
@@ -420,8 +428,8 @@ transform: translateY(-10px);
 .contacto__boton {
   padding: 12px;
   font-size: 1.2rem;
-  color: var(--color-de-contacto-boton);
-  background-color: var(--color-de-fondo-contacto-boton);
+  background-color: var(--color-de-fondo-contacto-boton); /* Un verde con buen contraste */
+  color: var(--color-de-contacto-boton);; /* Blanco para el texto */
   border: none;
   border-radius: 8px;
   cursor: pointer;
