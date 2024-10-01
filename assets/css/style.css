@@ -79,9 +79,11 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
-  height: 15%;
+  height: auto;
+  padding: 0;
 }
 
 .header__logo {
@@ -415,8 +417,8 @@ transform: translateY(-10px);
 }
 
 .contacto__campo:focus {
-  border-color: #007bff;
-  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  border-color: #34886f;
+  box-shadow: 0px 0px 8px rgba(33, 143, 106, 0.3);
   outline: none;
 }
 
@@ -428,8 +430,8 @@ transform: translateY(-10px);
 .contacto__boton {
   padding: 12px;
   font-size: 1.2rem;
-  background-color: var(--color-de-fondo-contacto-boton); /* Un verde con buen contraste */
-  color: var(--color-de-contacto-boton);; /* Blanco para el texto */
+  background-color: var(--color-de-fondo-contacto-boton); 
+  color: var(--color-de-contacto-boton);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -517,7 +519,6 @@ i {
     justify-content: flex-start;
   }
 
-
   .presentacion {
     display: flex;
     flex-direction: row-reverse;
@@ -532,13 +533,13 @@ i {
   }
 
   .formacion__lista {
-    flex-direction: column; /* Cambia a disposición vertical en pantallas más pequeñas */
+    flex-direction: column; 
     align-items: center;
   }
 
   .formacion__elemento {
-    width: 100%; /* Ocupará todo el ancho disponible en pantallas pequeñas */
-    max-width: 400px; /* Ancho máximo para mantener proporción */
+    width: 100%; 
+    max-width: 400px; 
   }
  
   .header,
@@ -570,7 +571,6 @@ i {
   }
   .header {
     justify-content: space-between;
-    height: 20% ;
   }
 
   .header__contenedor {
@@ -579,7 +579,7 @@ i {
   }
 
   .header__logo {
-    width: 200px;
+    width: 150px;
     height: auto;
     border-radius: 10%;
   }
@@ -624,27 +624,23 @@ i {
   .formacion__lista {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
     gap: 16px;
-    
-  }
-
-  .formacion__lista {
-    gap: 40px; /* Incrementa el espacio entre elementos */
   }
 
   .formacion__elemento {
-    width: 300px; /* Aumenta el tamaño de los elementos */
-    padding: 20px; /* Aumenta el espacio interior */
-    margin-bottom: 30px; /* Mayor separación entre filas */
+    width: 300px; 
+    padding: 20px; 
+    margin-bottom: 30px; 
   }
 
   .formacion__img {
-    width: 120px; /* Ajusta el tamaño de las imágenes para pantallas grandes */
+    width: 120px; 
   }
 
   .datos__nombre {
-    font-size: 1.5rem; /* Aumenta el tamaño del texto */
+    font-size: 1.5rem; 
   }
 
   .datos__institucion {
@@ -674,16 +670,16 @@ i {
 
   .contacto {
     flex-direction: row;
-    justify-content: center; /* Ajusta los elementos a la izquierda */
-    gap: 50px; /* Espacio entre imagen y formulario */
+    justify-content: center; 
+    gap: 50px; 
   }
 
   .contacto__img {
-    display: inline; /* Muestra la imagen */
+    display: inline; 
   }
 
   .contacto__contenedor {
-    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: flex-start; 
   }
   
   .header,
