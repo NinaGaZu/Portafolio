@@ -639,14 +639,6 @@ i {
     width: 120px; 
   }
 
-  .datos__nombre {
-    font-size: 1.5rem; 
-  }
-
-  .datos__institucion {
-    font-size: 1.2rem;
-  }
-
   .proyectos__contenedor ul {
     display: flex;
     flex-direction: column;
