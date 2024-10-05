@@ -1,7 +1,8 @@
 <h1 align = "center">Portafolio Personal</h1>
 <p align = "justify">Bienvenida/o a mi portafolio web. Este sitio es mi carta de presentación como desarrolladora front-end, donde podrás conocer más sobre mí, mis habilidades técnicas y los proyectos en los que he trabajado.</p>
-![Portafolio](https://github.com/user-attachments/assets/b9274dd9-c573-4c89-b5a6-d705b879717f)
-
+<div align = "center">
+  <img src = "https://github.com/NinaGaZu/Portafolio/blob/main/assets/img/Portafolio.jpg"  width = 400px/>
+</div>
 <h2>Estructura del portafolio</h2>
 <ul>
   <li align = "justify">Sección de Presentación: Aquí destaco quién soy, qué hago, y mi enfoque como desarrolladora. Es un resumen conciso de mi trayectoria y mis objetivos profesionales.</li>
