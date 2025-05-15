@@ -32,7 +32,7 @@ const Hero = () => {
         </p>
         <button className="bg-white text-indigo-600 px-10 py-2 my-3
         rounded-full hover:bg-indigo-800 hover:text-white">
-          <a href="/public/Gianina Gaete 2025.pdf"
+          <a href="/Gianina Gaete 2025.pdf"
               download>
             Descargar CV
           </a>
