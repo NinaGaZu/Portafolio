@@ -9,13 +9,11 @@ const Hero = () => {
         <p className="text-4xl mb-5 text-slate-300">Yo soy</p>
         <h1 className="text-6xl">Gianina Gaete</h1>
         <hr />
-        <p className="mt-10 text-xl text-slate-300 font-sans">Lorem 
-          ipsum dolor, sit amet consectetur 
-          adipisicing elit. Sapiente distinctio minus 
-          ipsum dolor corporis impedit error? Tempore 
-          ratione eum fuga dolores deleniti commodi 
-          tempora eveniet fugiat sed, recusandae amet 
-          sit?</p>
+        <p className="mt-10 text-xl text-slate-300 font-sans">La pandemia me motivó 
+          a reinventarme profesionalmente, y encontré en el desarrollo web una pasión 
+          inesperada. Me encanta el desafío constante que ofrece la tecnología, siempre 
+          cambiante y llena de oportunidades para aprender. No me encasillo en un solo 
+          tipo de proyecto: disfruto enfrentar nuevos retos y seguir creciendo en el proceso.</p>
       </div>
 
       <div className="w-1/3 items-center ssm:w-fit">
@@ -26,12 +24,12 @@ const Hero = () => {
       <div className="w-1/3 ssm:w-fit">
         <p className="text-4xl mb-4">Sobre mí</p>
         <p className="text-slate-300">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Desarrolladora web en constante aprendizaje. Amo los desafíos y crear soluciones prácticas con tecnología.
         </p>
-        <button className="bg-white text-indigo-600 px-10 py-2 my-3
+        {/* <button className="bg-white text-indigo-600 px-10 py-2 my-3
         rounded-full hover:bg-indigo-800 hover:text-white">
           Ver más...
-        </button>
+        </button> */}
 
         <div className="flex mt-5 space-x-4 cursor-pointer">
           <a
