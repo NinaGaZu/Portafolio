@@ -10,12 +10,9 @@ const Hero = () => {
         <h1 className="text-6xl">Gianina Gaete</h1>
         <hr />
         <p className="mt-10 text-xl text-slate-300 font-sans">
-          La pandemia me motivó a reinventarme profesionalmente, y 
-          encontré en el desarrollo web una pasión inesperada. Me 
-          encanta el desafío constante que ofrece la tecnología, 
-          siempre cambiante y llena de oportunidades para aprender. 
-          No me encasillo en un solo tipo de proyecto: disfruto enfrentar 
-          nuevos retos y seguir creciendo en el proceso.
+          Me gusta la tecnología porque siempre está cambiando y eso me motiva a seguir aprendiendo. Cada proyecto que hago es una oportunidad para mejorar, probar nuevas ideas y buscar la mejor forma de que algo funcione y se vea bien.
+     Manejo HTML, CSS, JavaScript, React, Git, GitHub, MySQL y Node.js, gracias a mi formación en Talento Digital y el programa Oracle ONE de Alura Latam. Ahora estoy explorando cómo aplicar inteligencia artificial en el desarrollo web.
+     Estoy abierta a oportunidades laborales, colaboraciones freelance o pasantías para ganar más experiencia y seguir creciendo.
         </p>
       </div>
 
@@ -47,8 +44,8 @@ const Hero = () => {
             >        
           <BsGithub size={40} className="border-4
            hover:border-indigo-800 rounded-full"/>
-           </a>
-           <a
+          </a>
+          {/* <a
             href="https://instagram.com/gianina_gaete/"
             target="_blank"
             rel="noopener noreferrer"
@@ -56,7 +53,7 @@ const Hero = () => {
             >    
           <BsInstagram size={40} className="border-4
            hover:border-indigo-800 rounded-full"/>
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/in/gianina-gaete/"
             target="_blank"
