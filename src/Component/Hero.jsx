@@ -10,9 +10,16 @@ const Hero = () => {
         <h1 className="text-6xl">Gianina Gaete</h1>
         <hr />
         <p className="mt-10 text-xl text-slate-300 font-sans">
-          Me gusta la tecnología porque siempre está cambiando y eso me motiva a seguir aprendiendo. Cada proyecto que hago es una oportunidad para mejorar, probar nuevas ideas y buscar la mejor forma de que algo funcione y se vea bien.
-     Manejo HTML, CSS, JavaScript, React, Git, GitHub, MySQL y Node.js, gracias a mi formación en Talento Digital y el programa Oracle ONE de Alura Latam. Ahora estoy explorando cómo aplicar inteligencia artificial en el desarrollo web.
-     Estoy abierta a oportunidades laborales, colaboraciones freelance o pasantías para ganar más experiencia y seguir creciendo.
+          Me encanta la tecnología porque nunca se queda quieta —siempre hay algo nuevo por aprender, 
+          y eso me motiva a seguir creciendo. Cada proyecto es una excusa perfecta para probar ideas, 
+          mejorar lo que ya sé y buscar que todo funcione bien… ¡y se vea bonito!
+
+          Trabajo con HTML, CSS, JavaScript, React, Git, GitHub, MySQL y Node.js, gracias a mi paso por Talento 
+          Digital y el programa Oracle ONE de Alura Latam. Últimamente, estoy metiéndome en el mundo de la 
+          inteligencia artificial aplicada al desarrollo web (¡muy emocionante todo eso!).
+
+          Estoy abierta a oportunidades laborales, colaboraciones freelance o pasantías. Si tenés un proyecto en 
+          mente o querés crear algo juntos, ¡me encantaría escucharte!
         </p>
       </div>
 
