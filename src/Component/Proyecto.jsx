@@ -49,6 +49,25 @@ const Proyecto = () => {
                     pueden listar, eliminar, registrar y modificar productos 
                     de forma dinámica utilizando HTML, CSS y JavaScript.
                   </p>
+                  {/* Botones */}
+                    <div className="flex gap-4">
+                      <a
+                        href="https://github.com/NinaGaZu/Challenge-AluraGeek"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-indigo-500 text-white text-sm rounded-lg hover:bg-indigo-600 transition"
+                      >
+                        Ver Repositorio
+                      </a>
+                      <a
+                        href="https://challenge-alura-geek-gray-tau.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gray-200 text-gray-800 text-sm rounded-lg hover:bg-gray-300 transition"
+                      >
+                        Ver Proyecto
+                      </a>
+                    </div>
                 </div>
               </div>
             </div>
