@@ -102,7 +102,7 @@ const Proyecto = () => {
                   </div>
                   <h3 className="text-lg font-medium mb-2">Web favoritos</h3>
                   <p className="text-slate-500 text-sm">
-                    página web estática que reúne recomendaciones personales en categorías como anime, libros, películas, series y cómics (manga, manhwa y manhua). El diseño está pensado para ser limpio, accesible y responsive, con contenido cargado dinámicamente y una estructura de JavaScript modular.
+                    Página web estática que reúne recomendaciones personales en categorías como anime, libros, películas, series y cómics (manga, manhwa y manhua). Con contenido cargado dinámicamente y una estructura de JavaScript modular.
                   </p>
                   {/* Botones */}
                     <div className="flex gap-4 p-3">
