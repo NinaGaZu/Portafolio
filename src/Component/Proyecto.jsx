@@ -102,7 +102,7 @@ const Proyecto = () => {
                   </div>
                   <h3 className="text-lg font-medium mb-2">Web favoritos</h3>
                   <p className="text-slate-500 text-sm">
-                    Aplicación que reune mis elecciones personales sobre libros, películas, series, entre otros.
+                    página web estática que reúne recomendaciones personales en categorías como anime, libros, películas, series y cómics (manga, manhwa y manhua). El diseño está pensado para ser limpio, accesible y responsive, con contenido cargado dinámicamente y una estructura de JavaScript modular.
                   </p>
                   {/* Botones */}
                     <div className="flex gap-4 p-3">
@@ -176,7 +176,7 @@ const Proyecto = () => {
                   </div>
                   <h3 className="text-lg font-medium mb-2">Cuestionario Base Exámen Teórico</h3>
                   <p className="text-slate-500 text-sm">
-                   Proyecto personal.  Aplicación interactiva para practicar el test teórico de conducir A1, A2, D, E en Chile.
+                   Proyecto personal.  Aplicación interactiva para practicar el test teórico de conducir A1, A2, D, E en Chile. Fue realizado con HTML5, CSS3 y JavaScript con módulos ES6.
                   </p>
                   {/* Botones */}
                     <div className="flex gap-4 p-3">
