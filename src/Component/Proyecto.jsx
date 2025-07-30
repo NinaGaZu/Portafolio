@@ -29,6 +29,25 @@ const Proyecto = () => {
                   <p className="text-slate-500 text-sm">
                     Aplicación que permite encriptar y desencriptar mensajes con una lógica definida. Proyecto realizado con HTML, CSS y JavaScript.
                   </p>
+                   {/* Botones */}
+                    <div className="flex gap-4 p-3">
+                      <a
+                        href="https://github.com/NinaGaZu/Encriptador"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-indigo-500 text-white text-sm rounded-lg hover:bg-indigo-600 transition"
+                      >
+                        Ver Repositorio
+                      </a>
+                      <a
+                        href="https://encriptador-cyan-ten.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gray-200 text-gray-800 text-sm rounded-lg hover:bg-gray-300 transition"
+                      >
+                        Ver Proyecto
+                      </a>
+                    </div>
                 </div>
               </div>
             </div>
@@ -50,7 +69,7 @@ const Proyecto = () => {
                     de forma dinámica utilizando HTML, CSS y JavaScript.
                   </p>
                   {/* Botones */}
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 p-3">
                       <a
                         href="https://github.com/NinaGaZu/Challenge-AluraGeek"
                         target="_blank"
