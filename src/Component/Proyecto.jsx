@@ -100,9 +100,9 @@ const Proyecto = () => {
                   <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold mb-2">
                     Mis Favoritos
                   </div>
-                  <h3 className="text-lg font-medium mb-2">Buscador de Películas</h3>
+                  <h3 className="text-lg font-medium mb-2">Web favoritos</h3>
                   <p className="text-slate-500 text-sm">
-                    Aplicación que permite buscar y guardar tus películas favoritas utilizando la API de OMDB. Proyecto realizado con React y hooks personalizados.
+                    Aplicación que reune mis elecciones personales sobre libros, películas, series, entre otros.
                   </p>
                   {/* Botones */}
                     <div className="flex gap-4 p-3">
@@ -144,7 +144,7 @@ const Proyecto = () => {
                   {/* Botones */}
                     <div className="flex gap-4 p-3">
                       <a
-                        href="https://github.com/NinaGaZu/Test-de-conducir"
+                        href="https://github.com/NinaGaZu/Gestor-de-tareas"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 bg-indigo-500 text-white text-sm rounded-lg hover:bg-indigo-600 transition"
@@ -152,7 +152,7 @@ const Proyecto = () => {
                         Ver Repositorio
                       </a>
                       <a
-                        href="https://test-de-conducir.vercel.app/"
+                        href="gestor-de-tareas-nu.vercel.app"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 bg-gray-200 text-gray-800 text-sm rounded-lg hover:bg-gray-300 transition"
@@ -181,7 +181,7 @@ const Proyecto = () => {
                   {/* Botones */}
                     <div className="flex gap-4 p-3">
                       <a
-                        href="https://github.com/NinaGaZu/Gestor-de-tareas"
+                        href="https://github.com/NinaGaZu/Test-de-conducir"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 bg-indigo-500 text-white text-sm rounded-lg hover:bg-indigo-600 transition"
@@ -189,7 +189,7 @@ const Proyecto = () => {
                         Ver Repositorio
                       </a>
                       <a
-                        href="gestor-de-tareas-nu.vercel.app"
+                        href="https://test-de-conducir.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 bg-gray-200 text-gray-800 text-sm rounded-lg hover:bg-gray-300 transition"
