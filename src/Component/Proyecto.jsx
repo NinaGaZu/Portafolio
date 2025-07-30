@@ -152,7 +152,7 @@ const Proyecto = () => {
                         Ver Repositorio
                       </a>
                       <a
-                        href="gestor-de-tareas-nu.vercel.app"
+                        href="https://gestor-de-tareas-nu.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 bg-gray-200 text-gray-800 text-sm rounded-lg hover:bg-gray-300 transition"
