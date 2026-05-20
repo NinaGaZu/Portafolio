@@ -1,7 +1,7 @@
 import Nav from "./Nav";
 import Hero from "./Hero";
 import Skills from "./Skills";
-import Proyecto from "./Proyecto";
+import Proyectos from "./Proyectos";
 import Contacto from "./Contacto";
 import Footer from "./Footer";
 
@@ -12,7 +12,7 @@ const Main = () => {
         <Nav />
         <Hero />
         <Skills />
-        <Proyecto />
+        <Proyectos />
         <Contacto />
         <Footer />
       </div>

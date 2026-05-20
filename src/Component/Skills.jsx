@@ -1,6 +1,7 @@
 // src/components/Skills.jsx
 import { Element } from "react-scroll";
 import SkillCard from "./SkillCard"; // Componente reutilizable
+import PropTypes from 'prop-types';
 
 // ✅ Datos centralizados (fácil de mantener)
 const skills = [
@@ -13,6 +14,15 @@ const skills = [
   { id: 7, name: 'Git', icon: '/src/assets/git.png', level: 'Intermedio', percentage: 80 },
   { id: 8, name: 'GitHub', icon: '/src/assets/github.jpeg', level: 'Intermedio', percentage: 85 },
 ];
+
+
+Skills.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  level: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired
+};
 
 export default function Skills() {
   return (

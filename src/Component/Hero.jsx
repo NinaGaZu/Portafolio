@@ -1,75 +1,81 @@
-import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import HeroPic from "../assets/Nina.jpg";
 
 const Hero = () => {
   return (
-    <section className="flex justify-around items-center p-10 space-x-10
-    lg:flex-row ssm:flex-col ssm:space-y-10 text-white">
-      <div className="w-1/3 ssm:w-fit">
-        <p className="text-4xl mb-5 text-slate-300">Yo soy</p>
-        <h1 className="text-6xl">Gianina Gaete</h1>
-        <hr />
-        <p className="mt-10 text-xl text-slate-300 font-sans">
-          Me encanta la tecnología porque nunca se queda quieta —siempre hay algo nuevo por aprender, 
-          y eso me motiva a seguir creciendo. Cada proyecto es una excusa perfecta para probar ideas, 
-          mejorar lo que ya sé y buscar que todo funcione bien… ¡y se vea bonito!
+    <section className="min-h-screen bg-primary-900 text-white py-20 px-6">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+        {/* Texto */}
+        <div className="space-y-6">
+          <p className="text-accent-400 font-medium tracking-wide">Yo soy</p>
+          <h1 className="text-4xl md:text-5xl font-bold font-display">
+            Gianina <span className="text-accent-500">Gaete</span>
+          </h1>
+          <hr className="border-neutral-700" />
+          <p className="text-neutral-400 leading-relaxed">
+            Me encanta la tecnología porque nunca se queda quieta —siempre hay algo nuevo por aprender, 
+            y eso me motiva a seguir creciendo. Cada proyecto es una excusa perfecta para probar ideas, 
+            mejorar lo que ya sé y buscar que todo funcione bien… ¡y se vea bonito!
 
-          Trabajo con HTML, CSS, JavaScript, React, Git, GitHub, MySQL y Node.js, gracias a mi paso por Talento 
-          Digital y el programa Oracle ONE de Alura Latam. Últimamente, estoy metiéndome en el mundo de la 
-          inteligencia artificial aplicada al desarrollo web (¡muy emocionante todo eso!).
+            Trabajo con HTML, CSS, JavaScript, React, Git, GitHub, MySQL y Node.js, gracias a mi paso por Talento 
+            Digital y el programa Oracle ONE de Alura Latam. Últimamente, estoy metiéndome en el mundo de la 
+            inteligencia artificial aplicada al desarrollo web (¡muy emocionante todo eso!).
 
-          Estoy abierta a oportunidades laborales, colaboraciones freelance o pasantías. Si tenés un proyecto en 
-          mente o querés crear algo juntos, ¡me encantaría escucharte!
-        </p>
-      </div>
+            Estoy abierta a oportunidades laborales, colaboraciones freelance o pasantías. Si tenés un proyecto en 
+            mente o quieres crear algo juntos, ¡me encantaría escucharte!
+          </p>
+      
+          {/* CTAs */}
+          <div className="flex flex-wrap items-center gap-4 pt-4">
+            <a href="/public/CV_Gianina_Gaete.pdf" download
+              className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 
+               text-white px-6 py-3 rounded-lg font-medium transition-all 
+               hover:shadow-lg hover:shadow-accent-500/25">
+              Descargar CV
+            </a>
+            <div className="flex items-center gap-3">
+              <a
+                href="https://github.com/NinaGaZu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-12 h-12 
+                 bg-white/10 hover:bg-accent-500/20 
+                 border-2 border-white/20 hover:border-accent-400
+                 rounded-full transition-all duration-300 
+                 hover:scale-110"
+                aria-label="GitHub de Gianina Gaete"
+              >
+                <BsGithub size={24} className="text-white" />
+              </a>
+  
+              <a
+                href="https://www.linkedin.com/in/gianina-gaete/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-12 h-12 
+                 bg-white/10 hover:bg-accent-500/20 
+                 border-2 border-white/20 hover:border-accent-400
+                 rounded-full transition-all duration-300 
+                 hover:scale-110"
+                aria-label="LinkedIn de Gianina Gaete"
+              >
+                <BsLinkedin size={24} className="text-white" />
+              </a>
+            </div>
+          </div>
+        </div>
 
-      <div className="w-1/3 items-center ssm:w-fit">
-        <img src={HeroPic} alt="Foto de Gianina Gaete, desarrolladora web" width={500} height={500} 
-        className="rounded-full w-full border-8 border-white" />
-      </div>
-
-      <div className="w-1/3 ssm:w-fit">
-        <p className="text-4xl mb-4">Sobre mí</p>
-        <p className="text-slate-300">
-          Desarrolladora web en constante aprendizaje. 
-          Amo los desafíos y crear soluciones prácticas con tecnología.
-        </p>
-        <button className="bg-white text-indigo-600 px-10 py-2 my-3
-        rounded-full hover:bg-indigo-800 hover:text-white">
-          <a href="/Gianina Gaete-CV 2025.pdf.pdf"
-              download>
-            Descargar CV
-          </a>
-        </button>
-
-        <div className="flex mt-5 space-x-4 cursor-pointer">
-          <a
-            href="https://github.com/NinaGaZu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-white/80"
-            >        
-          <BsGithub size={40} className="border-4
-           hover:border-indigo-800 rounded-full"/>
-          </a>
-          {/* <a
-            href="https://instagram.com/gianina_gaete/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-white/80"
-            >    
-          <BsInstagram size={40} className="border-4
-           hover:border-indigo-800 rounded-full"/>
-          </a> */}
-          <a
-            href="https://www.linkedin.com/in/gianina-gaete/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-white/80"
-            >    
-          <BsLinkedin size={40} className="border-4
-           hover:border-indigo-800 rounded-full"/>
-          </a>
+        {/* Foto */}
+        <div className="flex justify-center md:justify-end">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-accent-400 
+                           to-secondary-400 rounded-full blur-2xl opacity-20"></div>
+            <img src={HeroPic} alt="Gianina Gaete" 
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full 
+                            object-cover border-4 border-accent-400/30 
+                            shadow-2xl"/>
+          </div>
         </div>
       </div>
     </section>
@@ -77,3 +83,5 @@ const Hero = () => {
 }
 
 export default Hero;
+
+
